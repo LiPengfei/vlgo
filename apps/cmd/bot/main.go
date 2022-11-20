@@ -1,7 +1,7 @@
-package bot
+package main
 
 import "fmt"
 
-func Main() {
+func main() {
 	fmt.Printf("Hello! I am bot")
 }
