@@ -1,0 +1,21 @@
+syntax = "proto3"; 
+
+// DO NOT DELETE BELOW
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+package pb_gen;
+option go_package="pb_gen";
+
+message people {
+    string id = 1;
+    string name = 2;
+}
+
+message class {
+    repeated people students = 1[(gogoproto.nullable) = false]; 
+}
+
+
+message error_info {
+    uint32 code = 1;
+    string value = 2;
+}

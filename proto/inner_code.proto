@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package pb_gen;
+
+enum inner_code {
+    custom_third_pluginr = 100001;  // 第三库错误且不关心其具体错误
+
+    actor_call_timeout   = 100002;  // actor call 超时
+    acotr_handle_timeout = 100003;  // actor 处理  超时
+    actor_init_timeout   = 100004;  // actor 初始化超时
+}
+
