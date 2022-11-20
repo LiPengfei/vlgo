@@ -4,4 +4,4 @@ proto/pb_gen/
 
 ecode/base.go
 ecode/inner_code.go
-ecoce/error_code.go
+ecode/error_code.go

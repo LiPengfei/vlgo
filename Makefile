@@ -15,9 +15,11 @@ outdir=bin
 cmddir=apps/cmd
 
 bot-debug:
+	go generate ./...
 	${GO} build ${debug_flags} ${compile_info_flags} -o ${outdir}/bot ${cmddir}/bot/main.go
 
 bot-release:
+	go generate ./...
 	${GO} build ${release_flags} ${compile_info_flags} -o ${outdir}/bot-release ${cmddir}/bot/main.go
 
 install_lint:
