@@ -9,7 +9,7 @@ package ecode
 
 import "fmt"
 
-//go:generate cd ecode && parse_code.sh
+//go:generate bash parse_code.sh
 type VEI interface {
 	error
 	fmt.Stringer

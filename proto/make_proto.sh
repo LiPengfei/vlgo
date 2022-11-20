@@ -16,16 +16,16 @@ function install_tool() {
     if [ ! -f $bindir/$tool ]; then
         go install github.com/gogo/protobuf/${tool}@$version
         cp -f $GOPATH/bin/$tool $bindir
+		cp -f $GOPATH/pkg/mod/github.com/gogo/protobuf@${version}/gogoproto/gogo.proto ./
     fi
 }
 
 function main() {
     install_tool
     mkdir -p pb_gen
-    local depsDir=.:$GOPATH/pkg/mod/github.com/gogo/protobuf@$version
 
     for p in ${protos[@]}; do
-        protoc -I=$depsDir --plugin=${tool}=$bindir/$tool--${plugin}_out=pb_gen $p 
+        protoc -I=. --plugin=${tool}=$bindir/$tool --${plugin}_out=pb_gen $p 
     done
 }
 

@@ -7,7 +7,7 @@
  */
 package proto
 
-//go:generate cd proto && ./make_proto.sh
+//go:generate bash ./make_proto.sh
 
 func NotUsed() {
 

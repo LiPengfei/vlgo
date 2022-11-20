@@ -3,6 +3,7 @@ syntax = "proto3";
 package pb_gen;
 
 enum inner_code {
+    success = 0 ; // 成功
     custom_third_pluginr = 100001;  // 第三库错误且不关心其具体错误
 
     actor_call_timeout   = 100002;  // actor call 超时
