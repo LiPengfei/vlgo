@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb_gen;
+option csharp_namespace = "VGameProto";
+
+enum error_code {
+  success = 0 ; // 成功
+
+
+  unexpect = 99999; // 未知错误
+  maxecode = 100000; // 最大值不要超过这个
+}
+
