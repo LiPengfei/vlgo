@@ -1,8 +1,8 @@
 /*
  * @Date: 2022-11-21 00:46:14
- * @LastEditors: lipengfei
- * @LastEditTime: 2022-11-21 03:26:30
- * @FilePath: \vlgo\gen\actor.go
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-11-21 03:29:03
+ * @FilePath: /vlgo/gen/actor.go
  * @Description: Do not edit
  */
 package gen
