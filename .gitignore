@@ -5,3 +5,4 @@ proto/pb_gen/
 ecode/base.go
 ecode/inner_code.go
 ecode/error_code.go
+.DS_Store

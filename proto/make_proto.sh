@@ -6,6 +6,10 @@
  # @Description: 
 ### 
 
+if [[ $GOPATH='' ]]; then
+	export GOPATH=$HOME/go
+fi
+
 plugin=gogofaster
 tool=protoc-gen-gogofaster
 version=v1.3.2

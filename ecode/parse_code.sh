@@ -139,7 +139,7 @@ function GoGen() {
 
 package ecode
 
-import "vlgo/proto/pb_gen"
+import "github.com/LiPengfei/vlgo/proto/pb_gen"
 
 var ErrSuccess = newVError("ErrSuccess", 0) // 成功
 

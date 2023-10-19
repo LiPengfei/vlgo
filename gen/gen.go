@@ -7,6 +7,6 @@
  */
 package gen
 
-import "vlgo/logger"
+import "github.com/LiPengfei/vlgo/logger"
 
 var log = logger.SLog

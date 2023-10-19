@@ -7,7 +7,7 @@
  */
 package gen
 
-import "vlgo/ecode"
+import "github.com/LiPengfei/vlgo/ecode"
 
 // GenController for control Each GenSvr Start/Stop
 type Sys interface {

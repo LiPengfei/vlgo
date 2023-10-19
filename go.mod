@@ -1,9 +1,8 @@
-module vlgo
+module github.com/LiPengfei/vlgo
 
-go 1.19
+go 1.21.3
 
 require (
-	github.com/gogo/protobuf v1.3.2
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/petermattis/goid v0.0.0-20221018141743-354ef7f2fd21
 	github.com/spf13/viper v1.14.0
